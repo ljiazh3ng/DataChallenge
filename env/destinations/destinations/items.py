@@ -6,9 +6,12 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-
-
+from scrapy.item import Item, Field
 class DestinationsItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    # Primary fields
+    continent = Field()
+    country = Field()
+    city = Field()
+    # Log fields
+    url = Field()
+    date = Field()
