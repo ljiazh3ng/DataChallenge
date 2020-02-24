@@ -5,6 +5,8 @@ Data challenge project.
 Attempt to scrape websites for tourist's destinations.
 DISCLAIMER : All information scraped are only used for the demonstration of the DataChallenge. No intention of using the information gathered for malicious intent.
 
+* All the crawled data is stored under docs/
+
 BluePrint for scraping.
 ===========
 
