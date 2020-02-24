@@ -13,7 +13,6 @@ BluePrint for scraping.
 2.  Once a big enough website is found, i inspected the SiteMap of the company's website to ensure that the website can be crawled with ease.
 
 3.  Simply crawl the xml using scrapy and output the links and title of the and url of the website to a csv file.
-    ![Ui](images/Ui.png)
 
 4.  Once I have a small batch of CSV URL and title of the HTML I inspect the urls and the content to see if they are what i am looking for. Record down the useless URL to add them into sitemap\_rules so that they wont be scraped.
 
