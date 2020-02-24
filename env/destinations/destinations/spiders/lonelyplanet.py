@@ -24,7 +24,3 @@ class LonelyplanetSpider(SitemapSpider):
             loader.add_value("destination", dest.xpath(".//h5[@class= 'jsx-158429263 responsive-medium leading-tight']/text()").extract_first())
             loader.add_xpath("country", "//*[@id='__next']/div/div[2]/header/div/div[1]/p[1]/a/text()")
             yield loader.load_item()
-        # yield {
-        #     'title': response.css("title ::text").extract_first(),
-        #     'url': response.url
-        # }

@@ -37,14 +37,36 @@ BluePrint for scraping.
 
 If more tourist destination is needed. We can simply rinse and repeat the above process on another sitemap.
 
+Use of program.
+===========
+1.  Clone the repo.
+2.  activate the env:`env/bin/activate`
+3.  Change directory to ~/env/destinations
+4.  Use the different spider to crawl the websites.
+    -   **arrivalguides.com** : `scrapy crawl arrivalguides -t csv -o example1.csv`
+
+    -   **holidify.com** : `scrapy crawl holidify -t csv -o example2.csv`
+
+    -   **lonelyplanet.com** : `scrapy crawl lonelyplanet -t csv -o example3.csv`
+
+
 Attempt on scraping Airport zip code.
 ===========
 
-1.  Research, managed to get the names, latitude and longtitude of all the airports in the world in a CSV.
+1.  Did some research and managed to get the names,latitude and longtitude of all the airports in the world in a CSV.
 
 2.  Used Selenium to enter all the latitude and longtitude of the airports to a script to get the ZIP code.
 
 3.  Not all country uses a postal / zip code. Thus some airport's zip code are left blank.
 
 4.  Reason for using Selenium is because there isn't a website that offers all the zip code of the airports to crawl. Some website provide zipcode of airport in America but no the whole world. They also dont cover small airports.
+
+P.S This method is very slow. As compared to gathering from sidemaps.
+ 
+Use of Selinium.
+===========
+
+1.  Download google chrome webdriver and all the imports.
+
+2.  Run PartC/test/Zipcode.py
 
